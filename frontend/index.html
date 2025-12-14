@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ancient Empires Visualization and Timeline</title>  
+    <link 
+    rel = "stylesheet"
+    href = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel = "stylesheet" href = "style.css"> <!--linking css-->
+    
 </head>
 <body>
     <h1>Ancient Empires Timeline</h1>
@@ -11,6 +16,8 @@
     <input type = "number" id="yearInput" placeholder = "eg:500">
     <button id = "fetchButton">Fetch Empires</button>
     <ul id = "results"></ul>
+    <div id ="map"></div> <!--adding a map container-->
+    <script src = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src = "script.js"></script>
     
 </body>
