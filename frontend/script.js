@@ -1,3 +1,7 @@
+const map = L.map("map").setView([33,44],5); //added leaflet map coordinates for the middle east
+L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",{
+    attribution: "© OpenStreetMap © CARTO",
+}).addTo(map);
 const button = document.getElementById("fetchButton");
 const input = document.getElementById("yearInput");
 const resultsList = document.getElementById("results");
